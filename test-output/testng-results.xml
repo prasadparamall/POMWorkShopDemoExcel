@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-12T21:44:50 IST" name="Suite" finished-at="2022-11-12T21:45:48 IST" duration-ms="58500">
+    <groups>
+    </groups>
+    <test started-at="2022-11-12T21:44:50 IST" name="browserurl" finished-at="2022-11-12T21:45:06 IST" duration-ms="16243">
+      <class name="testcases.OpenBrowserAndUrl_Test">
+        <test-method signature="openBrowserAndURL()[pri:1, instance:testcases.OpenBrowserAndUrl_Test@2b5825fa]" started-at="2022-11-12T21:44:50 IST" name="openBrowserAndURL" finished-at="2022-11-12T21:45:06 IST" duration-ms="15647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndURL -->
+      </class> <!-- testcases.OpenBrowserAndUrl_Test -->
+    </test> <!-- browserurl -->
+    <test started-at="2022-11-12T21:45:06 IST" name="login" finished-at="2022-11-12T21:45:13 IST" duration-ms="6631">
+      <class name="testcases.LoginPage_Test">
+        <test-method signature="EnterValidCredentials(java.util.Hashtable)[pri:0, instance:testcases.LoginPage_Test@4cc6fa2a]" started-at="2022-11-12T21:45:06 IST" name="EnterValidCredentials" data-provider="dp" finished-at="2022-11-12T21:45:13 IST" duration-ms="6422" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Test123, username=testdemowebshop@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnterValidCredentials -->
+      </class> <!-- testcases.LoginPage_Test -->
+    </test> <!-- login -->
+    <test started-at="2022-11-12T21:45:13 IST" name="clear" finished-at="2022-11-12T21:45:14 IST" duration-ms="1453">
+      <class name="testcases.ClearShoppingPage_Test">
+        <test-method signature="clearshoppingcard()[pri:0, instance:testcases.ClearShoppingPage_Test@61884cb1]" started-at="2022-11-12T21:45:13 IST" name="clearshoppingcard" finished-at="2022-11-12T21:45:14 IST" duration-ms="1324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearshoppingcard -->
+      </class> <!-- testcases.ClearShoppingPage_Test -->
+    </test> <!-- clear -->
+    <test started-at="2022-11-12T21:45:14 IST" name="additems" finished-at="2022-11-12T21:45:17 IST" duration-ms="2371">
+      <class name="testcases.AddBooksPage_Test">
+        <test-method signature="addbookspage()[pri:0, instance:testcases.AddBooksPage_Test@192d74fb]" started-at="2022-11-12T21:45:14 IST" name="addbookspage" finished-at="2022-11-12T21:45:17 IST" duration-ms="2300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addbookspage -->
+      </class> <!-- testcases.AddBooksPage_Test -->
+    </test> <!-- additems -->
+    <test started-at="2022-11-12T21:45:17 IST" name="gotocardss" finished-at="2022-11-12T21:45:18 IST" duration-ms="1097">
+      <class name="testcases.GotoCardPage_Test">
+        <test-method signature="gotocard()[pri:0, instance:testcases.GotoCardPage_Test@5bfa8cc5]" started-at="2022-11-12T21:45:17 IST" name="gotocard" finished-at="2022-11-12T21:45:18 IST" duration-ms="1013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gotocard -->
+      </class> <!-- testcases.GotoCardPage_Test -->
+    </test> <!-- gotocardss -->
+    <test started-at="2022-11-12T21:45:18 IST" name="billing" finished-at="2022-11-12T21:45:28 IST" duration-ms="10273">
+      <class name="testcases.BillingAddressPage_Test">
+        <test-method signature="BillingAdd(java.util.Hashtable)[pri:3, instance:testcases.BillingAddressPage_Test@4a3329b9]" started-at="2022-11-12T21:45:18 IST" name="BillingAdd" data-provider="dp" finished-at="2022-11-12T21:45:28 IST" duration-ms="10103" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{phoneno=9.8765432119E10, lname=test1, email=abc1234@gmail.com, zipcode=123456.0, address2=testnew1, address1=door no:12345, city=andhrapradesh, fname=prasad1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BillingAdd -->
+      </class> <!-- testcases.BillingAddressPage_Test -->
+    </test> <!-- billing -->
+    <test started-at="2022-11-12T21:45:28 IST" name="checkoutdetails" finished-at="2022-11-12T21:45:34 IST" duration-ms="5877">
+      <class name="testcases.CheckoutDetailsPage_Test">
+        <test-method signature="checkoutDetails_Page()[pri:0, instance:testcases.CheckoutDetailsPage_Test@3f053c80]" started-at="2022-11-12T21:45:28 IST" name="checkoutDetails_Page" finished-at="2022-11-12T21:45:34 IST" duration-ms="5787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutDetails_Page -->
+      </class> <!-- testcases.CheckoutDetailsPage_Test -->
+    </test> <!-- checkoutdetails -->
+    <test started-at="2022-11-12T21:45:34 IST" name="sucee" finished-at="2022-11-12T21:45:45 IST" duration-ms="10602">
+      <class name="testcases.SuccessOrderPage_Test">
+        <test-method signature="successOrder_Page()[pri:0, instance:testcases.SuccessOrderPage_Test@3918c187]" started-at="2022-11-12T21:45:34 IST" name="successOrder_Page" finished-at="2022-11-12T21:45:44 IST" duration-ms="10542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successOrder_Page -->
+      </class> <!-- testcases.SuccessOrderPage_Test -->
+    </test> <!-- sucee -->
+    <test started-at="2022-11-12T21:45:45 IST" name="logout" finished-at="2022-11-12T21:45:48 IST" duration-ms="3793">
+      <class name="testcases.LogoutPage_Test">
+        <test-method signature="logout()[pri:1, instance:testcases.LogoutPage_Test@62dae540]" started-at="2022-11-12T21:45:45 IST" name="logout" finished-at="2022-11-12T21:45:48 IST" duration-ms="3066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LogoutPage_Test@62dae540]" started-at="2022-11-12T21:45:48 IST" name="tearDown" finished-at="2022-11-12T21:45:48 IST" duration-ms="639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.LogoutPage_Test -->
+    </test> <!-- logout -->
+  </suite> <!-- Suite -->
+</testng-results>
