@@ -17,11 +17,13 @@ import org.testng.Reporter;
 import com.relevantcodes.extentreports.LogStatus;
 
 import baseclass.baseclass;
+import utilities.MonitoringMail;
+import utilities.TestConfig;
 import utilities.Utilities;
 
 
 
-public class CustomListeners extends baseclass implements ITestListener{
+public class CustomListeners extends baseclass implements ITestListener,ISuiteListener {
 
 	public 	String messageBody;
 	public void onFinish(ITestContext arg0) {
@@ -87,6 +89,33 @@ public class CustomListeners extends baseclass implements ITestListener{
 		rep.flush();
 		
 	}
+	
+	public void onFinish(ISuite arg0) {
+		
+		MonitoringMail mail = new MonitoringMail();
+		 
+		try {
+			messageBody = "http://" + InetAddress.getLocalHost().getHostAddress()
+					+ ":8080/job/POMWorkShopDemoExcel/Extent_20Report/";
+		} catch (UnknownHostException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	
+		try {
+			mail.sendMail(TestConfig.server, TestConfig.from, TestConfig.to, TestConfig.subject, messageBody);
+		} catch (AddressException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (MessagingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		
+	}
+	
+
 
 	
 }
